@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <input type="text" id="age">
+    <button onclick="sayhello()">say hello</button>
+    <input type="text" id="message">
+</div>
+<script>
+
+    let age = parseInt(document.getElementById("age").value);
+    let helloTo = parseInt(document.getElementById("message").value);
+    
+function sayhello() {
+    
+    let ageValue= +age.value
+
+    if(ageValue >= 6 && ageValue < 11 ) {
+        message.value = "hello kid"
+    } 
+    else if (ageValue >= 11 && ageValue < 18 ) {
+        message.value = "hello teen"
+    } 
+    else if (ageValue >= 19 && ageValue < 21 ) {
+        message.value = "hello adult"
+    } 
+    else (ageValue > 21 ) {
+        message.value = "oldman"
+    }
+}
+
+    
+
+</script>
+</body>
+</html>
